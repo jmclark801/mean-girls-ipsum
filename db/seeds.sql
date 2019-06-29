@@ -1,4 +1,4 @@
-INSERT INTO quotes (quote, character_name, voice_over)
+INSERT INTO quotes (quote, characterName, voiceOver)
 VALUES ("You remember your phone number? I wrote it down for you, just in case. Put it in your pocket, I don't want you to lose it. OK? You ready?", "Mom", false),
 ("It's Cady's big day.", "Dad", false),
 ("I guess it's natural for parents to cry on their kid's first day of school. But, you know, this usually happens when the kid is 5. I'm and until today, I was home-schooled. I know what you're thinking. 'Home-schooled kids are freaks.'", "Cady", true),
