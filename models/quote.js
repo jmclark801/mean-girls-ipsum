@@ -5,7 +5,10 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     characterName: DataTypes.STRING,
-    voiceOver: DataTypes.BOOLEAN
+    voiceOver: DataTypes.BOOLEAN,
+    
+  }, {
+    timestamps: false
   });
 
   return Quotes;
