@@ -4,8 +4,8 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(800),
       allowNull: false
     },
-    character_name: DataTypes.STRING,
-    voice_over: DataTypes.BOOLEAN
+    characterName: DataTypes.STRING,
+    voiceOver: DataTypes.BOOLEAN
   });
 
   return Quotes;
