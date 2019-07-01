@@ -26,22 +26,11 @@ module.exports = function (app) {
     });
   });
 
-  // app.get("/", function(req, res) {
-  //   db.Comment.findAll({
-  //       order: [["lastName", "ASC"], ["firstName", "ASC"]]
-  //   }).then(function(contacts){
-  //       console.log(contacts);
-  //       res.render("contacts", { contacts, name: "Jim" })
-  //   })
-  // });
-//   Encounter.findAll({ order: Sequelize.literal('rand()'), limit: 5 }).then((encounters) => {
-//     // single random encounter
-// });
-
   app.get("/comments", function (req, res) {
     db.Comment.findAll({
-      order: db.Sequelize.literal('rand()'), limit: 8
-    }).then(function(comments){
+      order: db.Sequelize.literal('rand()'),
+      limit: 8
+    }).then(function (comments) {
       console.log(comments);
       res.render("comments", {
         comments
