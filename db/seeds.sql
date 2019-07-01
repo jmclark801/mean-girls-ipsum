@@ -403,3 +403,8 @@ VALUES ("You remember your phone number? I wrote it down for you, just in case. 
 ("Finally, Girl World was at peace.", "Cady", true),
 ("Hey, check it out. Junior Plastics.", "Damian", false),
 ("And if any freshmen tried to disturb that peace… Well, let's just say we knew how to take care of it. Just kidding.", "Cady", true);
+
+
+INSERT INTO comments (comment, email)
+VALUES ("This site is so FETCH!", "test@testyMcTesterson.com"),
+("The limit of this site does not exist!", "adam@yourteacher.com");
