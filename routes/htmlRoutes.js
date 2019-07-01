@@ -32,9 +32,7 @@ module.exports = function (app) {
       limit: 8
     }).then(function (comments) {
       console.log(comments);
-      res.render("comments", {
-        comments
-      });
+      res.render("comments", {comments});
     });
   });
 
