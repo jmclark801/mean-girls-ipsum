@@ -1,4 +1,9 @@
 {
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        }
+    },
     "env": {
         "browser": true,
         "commonjs": true,
@@ -15,7 +20,7 @@
         "no-func-assign": "error",
         "no-irregular-whitespace":"error",
         "no-unreachable": "error",
-        "curly": "off",
+        "curly": "error",
         "dot-notation": "error",
         "eqeqeq": "error",
         "no-empty-function": "error",

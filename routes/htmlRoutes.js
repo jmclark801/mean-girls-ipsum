@@ -28,10 +28,10 @@ module.exports = function (app) {
 
   app.get("/comments", function (req, res) {
     db.Comment.findAll({
-      order: db.Sequelize.literal('rand()'),
+      order: db.Sequelize.literal("rand()"),
       limit: 8
     }).then(function (comments) {
-      res.render("comments", {comments});
+      res.render("comments", { comments });
     });
   });
 
