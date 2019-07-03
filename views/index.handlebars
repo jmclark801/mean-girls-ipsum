@@ -100,7 +100,12 @@
               <div>
                 <div class="row">
                   <div class="12u">
-                    <div id="lorem"></div>
+                    <div id="lorem">
+                      {{#each ipsum}}
+                      <p>{{this}}</p>
+                      {{/each}}
+                      
+                    </div>
 
 
                   </div>

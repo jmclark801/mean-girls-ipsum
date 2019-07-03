@@ -40,8 +40,8 @@ module.exports = function(app) {
       
       console.log(ipsum);
       
-      res.render("example", {
-        example: ipsum
+      res.render("index", {
+        ipsum: ipsum
       });
     });
   });
