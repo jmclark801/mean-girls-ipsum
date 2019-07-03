@@ -2,14 +2,14 @@ var db = require("../models");
 
 module.exports = function (app) {
   // Load index page
-  // app.get("/results", function(req, res) {
-  //   db.Quotes.findAll({}).then(function(dbQuotes) {
-  //     res.render("index", {
-  //       msg: "Welcome!",
-  //       examples: dbQuotes
-  //     });
-  //   });
-  // });
+  app.get("/", function(req, res) {
+    db.Quotes.findAll({}).then(function(dbQuotes) {
+      res.render("index", {
+        // msg: "Welcome!",
+        // examples: dbQuotes
+      });
+    });
+  });
 
   // Load example page and pass in an example by id
   app.get("/results/:paragraphNumbers", function(req, res) {
