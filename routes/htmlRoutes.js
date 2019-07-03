@@ -31,7 +31,6 @@ module.exports = function (app) {
       order: db.Sequelize.literal('rand()'),
       limit: 8
     }).then(function (comments) {
-      console.log(comments);
       res.render("comments", {comments});
     });
   });
