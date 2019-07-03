@@ -10,3 +10,9 @@ $("#submit").on("click", function(event){
   });
 });
 
+
+$("#butt").on("click", function(event) {
+  event.preventDefault();
+  var paragraphNumbers = $("#para").val().trim();
+  location.href = `/results/${paragraphNumbers}`;
+});
