@@ -13,9 +13,6 @@ $("#submit").on("click", function(event){
 
 $("#butt").on("click", function(event) {
   event.preventDefault();
-  var numberOfParagraphs = $("#para").val().trim();
-
-  $.post(`/results/${numberOfParagraphs}`).then(function(response) {
-    location.href = "/results/:paragraphNumbers";
-  });
+  var paragraphNumbers = $("#para").val().trim();
+  location.href = `/results/${paragraphNumbers}`;
 });
