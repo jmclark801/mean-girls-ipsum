@@ -19,7 +19,7 @@ module.exports = function(app) {
 
   app.post("/api/comments", function(req, res){
     // Object destructuring creates two variables such as req.body.comment
-    var { comment, email } = req.body
+    var comment, email  = req.body
     var newComment = {
         comment,
         email
