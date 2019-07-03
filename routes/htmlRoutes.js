@@ -1,6 +1,6 @@
 var db = require("../models");
 
-module.exports = function(app) {
+module.exports = function (app) {
   // Load index page
   // app.get("/results", function(req, res) {
   //   db.Quotes.findAll({}).then(function(dbQuotes) {
@@ -46,8 +46,18 @@ module.exports = function(app) {
     });
   });
 
+  app.get("/comments", function (req, res) {
+    db.Comment.findAll({
+      order: db.Sequelize.literal("rand()"),
+      limit: 8
+    }).then(function (comments) {
+      res.render("comments", { comments });
+    });
+  });
+
   // Render 404 page for any unmatched routes
-  app.get("*", function(req, res) {
+  app.get("*", function (req, res) {
     res.render("404");
   });
+
 };
