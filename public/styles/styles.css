@@ -60,7 +60,7 @@ h6 a {
 
 h2.major {
     position: relative;
-    border-top: solid 5px #75ee9d;
+    
 }
 
 h2.major span {
@@ -145,6 +145,8 @@ header>p {
     color: #090909;
     font-family: 'Raleway', sans-serif;
 }
+
+
 
 /* Image */
 
@@ -572,7 +574,18 @@ table.default thead {
 
 .box.highlight {
     text-align: center;
+    margin: 0 auto
 }
+
+/* butt fetch */
+
+#butt {
+    margin-bottom: 20px;
+}
+
+/*  */
+
+
 
 /* Icons */
 
@@ -855,7 +868,6 @@ table.default thead {
 
     #header {
         text-align: center;
-        font-size: 2em;
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
         text-transform: uppercase;
@@ -868,12 +880,7 @@ table.default thead {
         margin: 0 auto;
     }
 
-    /* #header .logo {
-					position: relative;
-					text-align: center;
-					border-top: solid 5px #042e12;
-				}  */
-
+    
     #logo {
         display: inline;
         color: #042e12;
@@ -887,7 +894,7 @@ table.default thead {
         position: relative;
         display: inline-block;
         padding: 0 1.5em 0 1.5em;
-        top: -0.65em;
+        top: -0.100em;
     }
 
     #header .logo h1 {
@@ -1065,11 +1072,15 @@ table.default thead {
     #footer {
         text-align: center;
         padding: 8em 0 8em 0;
+        margin: 0 auto;
+
     }
 
-    #footer h2.major {
+
+
+    /* #footer h2.major {
         margin: 0 0 1em 0;
-    }
+    } */
 
 }
 
@@ -1112,12 +1123,7 @@ table.default thead {
         border-bottom-width: 10px;
     }
 
-    /* Header */
-
-    #header {
-        padding: 4em 0 1em 0;
-    }
-
+       
     /* Banner */
 
     #banner {
