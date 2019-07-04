@@ -1,20 +1,5 @@
-<!DOCTYPE HTML>
 
-<html>
-
-<head>
-  <title>Mean Girls Ipsum - Quote lorem ipsum generator (useful for web design, web development, print
-    design, inspiration, movie buffs, and people of distinguished tastes!)</title>
-
-
-  <meta charset="utf-8" />
-
-
- 
-
-</head>
-
-<body class="homepage">
+<div class="homepage">
   <div id="page-wrapper">
 
     <!-- Header -->
@@ -77,6 +62,10 @@
 
           </div>
         </div>
+        
+         {{!-- <div class="copyable">
+                    Keeping this in here to show how copy can work - simply uncomment to test it
+          </div> --}}
         <div class="row 200%">
 
           <div class="-2u 8u">
@@ -87,19 +76,17 @@
               <div>
                 <div class="row">
                   <div class="12u">
-                    <div id="lorem">
+                    <div id="lorem" class="copyable">
                       {{#each ipsum}}
                       <p>{{this}}</p>
-                      {{/each}}
-                      
+                      {{/each}}                      
                     </div>
-
-
+                    
                   </div>
                 </div>
               </div>
+              <button class="button-copytext" onclick="copyToClipboard('.copyable')">Copy to Clipboard</button>
             </section>
-
           </div>
         </div>
 
@@ -118,11 +105,5 @@
           <div class="elfsight-app-4abbe6dd-5e2d-418a-bc4b-e9a35080f601"></div>
 
     </footer>
-
   </div>
-
-  <!-- Scripts -->
-
-</body>
-
-</html>
+</div>
