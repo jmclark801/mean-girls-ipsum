@@ -16,3 +16,14 @@ $("#butt").on("click", function(event) {
   var paragraphNumbers = $("#para").val().trim();
   location.href = `/results/${paragraphNumbers}`;
 });
+                   
+function copyToClipboard(elementToCopy){
+  console.log("In copyToClipboard");
+  var $temp = $("<input>");
+  $(".copyable").append($temp);
+  $temp.val($(elementToCopy).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
+
