@@ -10,8 +10,6 @@
   <meta charset="utf-8" />
 
 
- 
-
 </head>
 
 <body class="homepage">
@@ -65,7 +63,6 @@
                        size="6"
                        class="ipso"><br /><br />
 
-
                 <input type="button"
                        id="butt"
                        value="FETCH">
@@ -76,7 +73,7 @@
             </section>
 
           </div>
-        </div>
+        </div> <br>
         <div class="row 200%">
 
           <div class="-2u 8u">
@@ -91,7 +88,7 @@
                       {{#each ipsum}}
                       <p>{{this}}</p>
                       {{/each}}
-                      
+
                     </div>
 
 
@@ -118,6 +115,47 @@
           <div class="elfsight-app-4abbe6dd-5e2d-418a-bc4b-e9a35080f601"></div>
 
     </footer>
+
+    <div id="comments">
+
+      <div>
+        <h1>Love us? Let us know!</h1>
+      </div>
+      <form id="addComment">
+        <div class="form-group">
+          <!-- Comment -->
+          <label for="comment">Comment</label>
+          <textarea rows="4"
+                    cols="50"
+                    class="form-control"
+                    id="comment"
+                    name="comment"
+                    placeholder="Give us feedback!">
+          </textarea>
+        </div>
+        <div class="form-group">
+          <!-- Email Address -->
+          <label for="emailAddress">Email Address</label>
+          <input type="text"
+                 class="form-control"
+                 id="email"
+                 name="email"
+                 placeholder="Email Address">
+        </div>
+        <input type="submit"
+               value="Submit"
+               id="submit"
+               class="btn btn-primary">
+      </form> <br>
+      <h1>See what our users have to say:</h1>
+      <div id="comments">
+        {{#each comments}}
+        <ul>
+          <li>{{comment}}</li>
+        </ul>
+        {{/each}}
+      </div>
+    </div>
 
   </div>
 

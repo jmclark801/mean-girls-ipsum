@@ -2,7 +2,31 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Open+Sans+Condensed:700");
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 
+/* COMMENTS */
 
+#comments {
+    background: rgb(248, 133, 255);
+    background: -moz-radial-gradient(circle, rgba(248, 133, 255, 1) 0%, rgba(255, 134, 158, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(248, 133, 255, 1) 0%, rgba(255, 134, 158, 1) 100%);
+    background: radial-gradient(circle, rgba(248, 133, 255, 1) 0%, rgba(255, 134, 158, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f885ff", endColorstr="#ff869e", GradientType=1);
+    margin: 0 auto;
+    /* display: inline; */
+    padding: 100px 0 0 100px;
+    text-align: center;
+
+}
+
+#email {
+    width: 400px;
+    display: inline;
+}
+
+#comment {
+    width: 400px;
+    display: inline;
+
+}
 
 
 body {
@@ -1064,7 +1088,7 @@ table.default thead {
 
     #footer {
         text-align: center;
-        padding: 8em 0 8em 0;
+        padding: 2em 0 2em 0;
     }
 
     #footer h2.major {
@@ -1155,6 +1179,10 @@ table.default thead {
 
     #footer-wrapper h2.major {
         margin: 0 0 1em 0;
+    }
+
+    .container {
+        max-width: 1600px;
     }
 
 
@@ -1418,10 +1446,10 @@ table.default thead {
     }
 
     /* Footer */
-
+/* 
     #footer {
         padding: 4em 20px 2em 20px;
-    }
+    } */
 
     #footer>.row {
         padding: 1em 0 1em 0;
