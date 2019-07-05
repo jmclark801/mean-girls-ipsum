@@ -5,8 +5,7 @@ module.exports = function (app) {
   app.get("/", function(req, res) {
     db.Quotes.findAll({}).then(function(dbQuotes) {
       res.render("index", {
-        // msg: "Welcome!",
-        // examples: dbQuotes
+        
       });
     });
   });
@@ -17,12 +16,10 @@ module.exports = function (app) {
       dbQuotes
 
     ) {
-      // our quote to display follow how may par user want
       // console.log(dbQuotes);
       var ipsum = [];
       var newQuote = dbQuotes;
       for (var i= 0; i < req.params.paragraphNumbers; i++) {
-        // determine number of sentences 
         var randomNumberOfSentences = Math.floor(Math.random() * 5) + 3; 
         
         var paragraph = "";
@@ -32,13 +29,12 @@ module.exports = function (app) {
           newQuote.splice(numberToSelectSentences, 1);
           // console.log(newQuote);
           paragraph += " ";
-          // get ride of newQuote[numberToSelectSentences] now
-          // paragraph to to go to ipsum!!!
+          
         }
         ipsum.push(paragraph);
       }
       
-      console.log(ipsum);
+      // console.log(ipsum);
       
       res.render("index", {
         ipsum: ipsum
