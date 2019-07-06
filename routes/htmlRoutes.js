@@ -10,6 +10,14 @@ module.exports = function (app) {
     });
   });
 
+  app.get("/index.html", function(req, res) {
+    db.Quotes.findAll({}).then(function(dbQuotes) {
+      res.render("index", {
+        
+      });
+    });
+  });
+
   // Load example page and pass in an example by id
   app.get("/results/:paragraphNumbers", function(req, res) {
     db.Quotes.findAll({raw: true}).then(function(
