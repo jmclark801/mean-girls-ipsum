@@ -1,101 +1,156 @@
-<div class="homepage">
-  <div id="page-wrapper">
+<body>
+  <div class="homepage">
+    <div id="page-wrapper">
 
-    <!-- Header -->
-    <header id="header">
-      <div class="logo container">
-        <div>
-          <h1><a href="index.html" id="logo">Mean Girls Ipsum</a></h1>
-          <!-- <p>Raise your hand if you have ever been personally victimized by Regina George.</p> -->
-        </div>
-      </div>
-    </header>
-
-
-    <!-- Banner -->
-    <div id="banner-wrapper">
-      <section id="banner">
-        <h2>Welcome to Mean Girls Ipsum</h2>
-        <p>Generate random filler text exclusively from Mean Girls quotes.</p>
-        <a href="#cc" class="button">Let's make FETCH happen!</a>
-      </section>
-    </div>
-
-    <!-- Main -->
-    <div id="main-wrapper">
-      <div id="main" class="container">
-        <div class="row 200%">
-
-
-          <!-- Highlight -->
-          <section class="box highlight">
-
-            <header id="cc">
-              <h2>Get In Loser</h2>
-              <p>We're Going Shopping</p>
-            </header>
-
-            <form method="post">
-
-              <h3>Number of Paragraphs</h3>
-
-              <input type="input" id="para" name="paragraphs" value="3" size="6" class="ipso"><br /><br />
-
-
-              <button type="button" id="butt" value="FETCH">FETCH
-              </button>
-
-
-            </form>
-
-          </section>
-
-
-        </div>
-
-        {{!-- <div class="copyable">
-                    Keeping this in here to show how copy can work - simply uncomment to test it
-          </div> --}}
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <p id ="text-modal">Some text in the Modal..</p>
+      <!-- Header -->
+      <header id="header">
+        <div class="logo container">
+          <div>
+            <h1><a href="index.html"
+                 id="logo">Mean Girls Ipsum</a></h1>
+            <!-- <p>Raise your hand if you have ever been personally victimized by Regina George.</p> -->
           </div>
         </div>
+      </header>
+
+
+      <!-- Banner -->
+      <div id="banner-wrapper">
+        <section id="banner">
+          <h2>Welcome to Mean Girls Ipsum</h2>
+          <p>Generate random filler text exclusively from Mean Girls quotes.</p>
+          <a href="#cc"
+             class="button">Let's make FETCH happen!</a>
+        </section>
+      </div>
+
+      <!-- Main -->
+      <div id="main-wrapper">
+        <div id="main"
+             class="container">
+          <div class="row 200%">
+
+
+            <!-- Highlight -->
+            <section class="box highlight">
+
+              <header id="cc">
+                <h2>Get In Loser</h2>
+                <p>We're Going Shopping</p>
+              </header>
+
+              <form method="post">
+
+                <h3>Number of Paragraphs</h3>
+
+                <input type="input"
+                       id="para"
+                       name="paragraphs"
+                       value="3"
+                       size="6"
+                       class="ipso"><br /><br />
+
+
+                <button type="button"
+                        id="butt"
+                        value="FETCH">FETCH
+                </button>
+
+
+              </form>
+
+            </section>
+
+
+          </div>
+
+          {{!-- <div class="copyable">
+                    Keeping this in here to show how copy can work - simply uncomment to test it
+          </div> --}}
+          <div id="myModal"
+               class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p id="text-modal">Some text in the Modal..</p>
+            </div>
+          </div>
 
 
 
-        <!-- Features -->
-        <section class="boxFeatures">
-          <h2 class="major">Mean Quotes Below</h2>
+          <!-- Features -->
+          <section class="boxFeatures">
+            <h2 class="major">Mean Quotes Below</h2>
 
-          <div class="row">
-            <div id="lorem" class="copyable">
-              {{#each ipsum}}
-              <p>{{this}}</p>
-              {{/each}}
+            <div class="row">
+              <div id="lorem"
+                   class="copyable">
+                {{#each ipsum}}
+                <p>{{this}}</p>
+                {{/each}}
+
+              </div>
 
             </div>
 
+            <button class="button-copytext"
+                    onclick="copyToClipboard('.copyable')">Copy to Clipboard</button>
+          </section>
+
+
+
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer"
+              class="container">
+        <!-- Social Media Sharing Widget: -->
+        <script src="https://apps.elfsight.com/p/platform.js"></script>
+        <div class="elfsight-app-4abbe6dd-5e2d-418a-bc4b-e9a35080f601"></div>
+
+      </footer>
+
+      <div id="comments">
+
+        <div>
+          <h1>Love us? Let us know!</h1>
+        </div>
+        <form id="addComment">
+          <div class="form-group">
+            <!-- Comment -->
+            <label for="comment">Comment</label>
+            <textarea rows="4"
+                      cols="50"
+                      class="form-control"
+                      id="comment"
+                      name="comment"
+                      placeholder="Give us feedback!">
+            </textarea>
           </div>
-
-          <button class="button-copytext" onclick="copyToClipboard('.copyable')">Copy to Clipboard</button>
-        </section>
-
-
+          <div class="form-group">
+            <!-- Email Address -->
+            <label for="emailAddress">Email Address</label>
+            <input type="text"
+                   class="form-control"
+                   id="email"
+                   name="email"
+                   placeholder="Email Address">
+          </div>
+          <input type="submit"
+                 value="Submit"
+                 id="submit"
+                 class="btn btn-primary">
+        </form> <br>
+        <h1>See what our users have to say:</h1>
+        <div id="comments">
+          {{#each comments}}
+          <ul>
+            <li>{{comment}}</li>
+          </ul>
+          {{/each}}
+        </div>
 
       </div>
     </div>
 
-    <!-- Footer -->
-    <footer id="footer" class="container">
-
-
-
-      <!-- Social Media Sharing Widget: -->
-      <script src="https://apps.elfsight.com/p/platform.js"></script>
-      <div class="elfsight-app-4abbe6dd-5e2d-418a-bc4b-e9a35080f601"></div>
-
-    </footer>
-  </div>
-</div>
+</body>
