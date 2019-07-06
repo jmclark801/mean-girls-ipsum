@@ -36,7 +36,7 @@ module.exports = function (app) {
       
       // console.log(ipsum);
       
-      res.render("index", {
+      res.render("quotes", {
         ipsum: ipsum
       });
     });
