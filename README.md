@@ -56,7 +56,6 @@ Improvements:
 - MySQL
 - Heroku
 - JAWS DB 
-- Elfsight
 - Google Fonts
 
 
