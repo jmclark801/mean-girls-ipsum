@@ -18,6 +18,25 @@ $("#submit").on("click", function(event) {
 let modal = document.getElementById("myModal");
 let span = document.getElementsByClassName("close")[0];
 
+
+// Execute a function when the user releases a key on the keyboard
+document.addEventListener("keydown", function(event) {
+  console.log("event fired");
+  // Number 13 is the “Enter” key on the keyboard
+  if (event.keyCode === 13) {
+    console.log("correct key");
+    // Cancel the default action, if needed
+    
+    event.preventDefault();
+    var paragraphNumbers = $("#para").val().trim();
+    if (paragraphNumbers > 10) {
+      modal.style.display = "block";
+    } else { location.href = `/results/${paragraphNumbers}`;
+    }
+        
+  }
+});
+
 $("#butt").on("click", function(event) {
   event.preventDefault();
   var paragraphNumbers = $("#para").val().trim();
