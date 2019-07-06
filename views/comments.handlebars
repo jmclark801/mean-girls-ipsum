@@ -1,0 +1,38 @@
+<header id="header">
+	<div class="logo container">
+		<div>
+			<h1><a href="index.html" id="logo">Mean Girls Ipsum</a></h1>
+			<!-- <p>Raise your hand if you have ever been personally victimized by Regina George.</p> -->
+		</div>
+	</div>
+</header>
+<div id="comments">
+	<div>
+		<h1>Love us? Let us know!</h1>
+	</div>
+	<form id="addComment">
+		<div class="form-group">
+			<!-- Comment -->
+			<label for="comment">Comment</label>
+			<textarea rows="4" cols="50" class="form-control" id="comment" name="comment" placeholder="Give us feedback!">
+            </textarea>
+		</div>
+		<div class="form-group">
+			<!-- Email Address -->
+			<label for="emailAddress">Email Address</label>
+			<input type="text" class="form-control" id="email" name="email" placeholder="Email Address">
+		</div>
+		<input type="submit" value="Submit" id="submit" class="btn btn-primary">
+	</form> <br>
+	<h1>See what our users have to say:</h1>
+	<div>
+		<ul id="comments-list">
+			{{#each comments}}
+			<li class="comment-item">{{comment}}</li>
+			{{/each}}
+		</ul>
+	</div>
+</div>
+<footer id="footer" class="container comment-footer">
+	Copyright 2019
+</footer>

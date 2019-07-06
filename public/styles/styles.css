@@ -128,14 +128,14 @@ article {
   margin-bottom: 6em;
 }
 
-section > :last-child,
+section> :last-child,
 section:last-child,
-article > :last-child,
+article> :last-child,
 article:last-child {
   margin-bottom: 0;
 }
 
-header > p {
+header>p {
   display: block;
   text-transform: uppercase;
   color: #090909;
@@ -198,6 +198,7 @@ header > p {
 .boxFeatures {
   text-align: center;
 }
+
 /* Button */
 
 input[type="button"],
@@ -276,13 +277,13 @@ ul.default li {
   padding-left: 0.5em;
 }
 
-ul.divided > li {
+ul.divided>li {
   border-top: solid 2px #e7eae8;
   padding-top: 2.35em;
   margin-top: 2.35em;
 }
 
-ul.divided > li:first-child {
+ul.divided>li:first-child {
   border-top: 0;
   padding-top: 0;
   margin-top: 0;
@@ -467,24 +468,34 @@ ol.default li {
 /* Modal */
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
 .modal-content {
   background-color: rgb(248, 133, 255);
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 15% auto;
+  /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%;
+  /* Could be more or less, depending on screen size */
 }
 
 .close {
@@ -502,9 +513,10 @@ ol.default li {
 }
 
 #text-modal {
-    font-size: 28px;
-    text-align: center;
+  font-size: 28px;
+  text-align: center;
 }
+
 /* Forms */
 
 form label {
@@ -641,7 +653,7 @@ table.default thead {
   text-transform: none !important;
 }
 
-.icon > .label {
+.icon>.label {
   display: none;
 }
 
@@ -659,21 +671,15 @@ table.default thead {
 
 #main-wrapper {
   background: rgb(248, 133, 255);
-  background: -moz-radial-gradient(
-    circle,
-    rgba(248, 133, 255, 1) 0%,
-    rgba(255, 134, 158, 1) 100%
-  );
-  background: -webkit-radial-gradient(
-    circle,
-    rgba(248, 133, 255, 1) 0%,
-    rgba(255, 134, 158, 1) 100%
-  );
-  background: radial-gradient(
-    circle,
-    rgba(248, 133, 255, 1) 0%,
-    rgba(255, 134, 158, 1) 100%
-  );
+  background: -moz-radial-gradient(circle,
+      rgba(248, 133, 255, 1) 0%,
+      rgba(255, 134, 158, 1) 100%);
+  background: -webkit-radial-gradient(circle,
+      rgba(248, 133, 255, 1) 0%,
+      rgba(255, 134, 158, 1) 100%);
+  background: radial-gradient(circle,
+      rgba(248, 133, 255, 1) 0%,
+      rgba(255, 134, 158, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f885ff", endColorstr="#ff869e", GradientType=1);
   border-top: solid 5px #b1ddab;
   border-bottom: solid 5px #c1cac5;
@@ -681,21 +687,15 @@ table.default thead {
 
 #feedbackWidget {
   background: rgb(248, 133, 255);
-  background: -moz-radial-gradient(
-    circle,
-    rgba(248, 133, 255, 1) 0%,
-    rgba(255, 134, 158, 1) 100%
-  );
-  background: -webkit-radial-gradient(
-    circle,
-    rgba(248, 133, 255, 1) 0%,
-    rgba(255, 134, 158, 1) 100%
-  );
-  background: radial-gradient(
-    circle,
-    rgba(248, 133, 255, 1) 0%,
-    rgba(255, 134, 158, 1) 100%
-  );
+  background: -moz-radial-gradient(circle,
+      rgba(248, 133, 255, 1) 0%,
+      rgba(255, 134, 158, 1) 100%);
+  background: -webkit-radial-gradient(circle,
+      rgba(248, 133, 255, 1) 0%,
+      rgba(255, 134, 158, 1) 100%);
+  background: radial-gradient(circle,
+      rgba(248, 133, 255, 1) 0%,
+      rgba(255, 134, 158, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f885ff", endColorstr="#ff869e", GradientType=1);
   border-top: solid 5px #b1ddab;
   border-bottom: solid 5px #c1cac5;
@@ -762,29 +762,87 @@ table.default thead {
 /* COMMENTS */
 
 #comments {
-    background: rgb(248, 133, 255);
-    background: -moz-radial-gradient(circle, rgba(248, 133, 255, 1) 0%, rgba(255, 134, 158, 1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(248, 133, 255, 1) 0%, rgba(255, 134, 158, 1) 100%);
-    background: radial-gradient(circle, rgba(248, 133, 255, 1) 0%, rgba(255, 134, 158, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f885ff", endColorstr="#ff869e", GradientType=1);
-    margin: 0 auto;
-    /* display: inline; */
-    padding: 100px 0 0 100px;
-    text-align: center;
+  background: rgb(248, 133, 255);
+  background: -moz-radial-gradient(circle, rgba(248, 133, 255, 1) 0%, rgba(255, 134, 158, 1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(248, 133, 255, 1) 0%, rgba(255, 134, 158, 1) 100%);
+  background: radial-gradient(circle, rgba(248, 133, 255, 1) 0%, rgba(255, 134, 158, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f885ff", endColorstr="#ff869e", GradientType=1);
+  margin: 0 auto;
+  /* display: inline; */
+  padding: 100px 0 0 100px;
+  text-align: center;
 
 }
 
 #email {
-    width: 400px;
-    display: inline;
+  width: 400px;
+  display: inline;
 }
 
 #comment {
-    width: 400px;
-    display: inline;
-
+  width: 400px;
+  display: inline;
+  list-style-type: none;
 }
 
+#comments-list {
+  list-style-type: none;
+  padding-bottom: 50px;
+}
+
+/* This group of styles allows the user comments to each have a different style. */
+.comment-item {
+  padding-bottom: 25px;
+}
+
+.comment-item:nth-child(1) {
+  font-size: 24px;
+  margin-right: 15%;
+  margin-bottom: 10px;
+  text-align: right;
+}
+.comment-item:nth-child(2) {
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin-left: 15%;
+  text-align: left;
+}
+.comment-item:nth-child(3) {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-right: 12%;
+  text-align: right;
+}
+.comment-item:nth-child(4) {
+  font-size: 32px;
+  margin-bottom: 12px;
+  margin-left: 5%;
+  text-align: left;
+}
+.comment-item:nth-child(5) {
+  font-size: 30px;
+  margin-bottom: 8px;
+  margin-left: 15%;
+  text-align: left;
+}
+.comment-item:nth-child(6) {
+  font-size: 26px;
+  margin-bottom: 10px;
+  margin-right: 8%;
+  text-align: right;
+}
+.comment-item:nth-child(7) {
+  font-size: 28px;
+  margin-bottom: 12px;
+  margin-right: 18%;
+  text-align: left;
+}
+.comment-item:nth-child(8) {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-right: 4%;
+  text-align: left;
+}
 
 
 /* Desktop */
@@ -859,7 +917,7 @@ table.default thead {
     margin: 0 0 0.75em 0;
   }
 
-  .box.highlight header > p {
+  .box.highlight header>p {
     font-size: 1.65em;
     margin: 0 0 1.5em 0;
   }
@@ -877,7 +935,7 @@ table.default thead {
     margin: 0 0 0.5em 0;
   }
 
-  .box.post header > p {
+  .box.post header>p {
     font-size: 1.65em;
     margin: 0 0 0.5em 0;
   }
@@ -905,7 +963,7 @@ table.default thead {
     margin: 0 0 0.5em 0;
   }
 
-  .box.page-content header > p {
+  .box.page-content header>p {
     font-size: 1.65em;
     margin: 0 0 0.5em 0;
   }
@@ -941,6 +999,11 @@ table.default thead {
     padding-left: 2em;
   }
 
+  .comment-footer {
+    margin-top: 50px;
+    color: black;
+  }
+
   /* Wrappers */
 
   #banner-wrapper {
@@ -961,21 +1024,15 @@ table.default thead {
     text-transform: uppercase;
     padding: 5em 0 2em 0;
     background: rgb(248, 133, 255);
-    background: -moz-radial-gradient(
-      circle,
-      rgba(248, 133, 255, 1) 0%,
-      rgba(255, 134, 158, 1) 100%
-    );
-    background: -webkit-radial-gradient(
-      circle,
-      rgba(248, 133, 255, 1) 0%,
-      rgba(255, 134, 158, 1) 100%
-    );
-    background: radial-gradient(
-      circle,
-      rgba(248, 133, 255, 1) 0%,
-      rgba(255, 134, 158, 1) 100%
-    );
+    background: -moz-radial-gradient(circle,
+        rgba(248, 133, 255, 1) 0%,
+        rgba(255, 134, 158, 1) 100%);
+    background: -webkit-radial-gradient(circle,
+        rgba(248, 133, 255, 1) 0%,
+        rgba(255, 134, 158, 1) 100%);
+    background: radial-gradient(circle,
+        rgba(248, 133, 255, 1) 0%,
+        rgba(255, 134, 158, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f885ff", endColorstr="#ff869e", GradientType=1);
     margin: 0 auto;
   }
@@ -1039,7 +1096,7 @@ table.default thead {
     transition: top 0.15s ease-in-out;
   }
 
-  #nav li > ul {
+  #nav li>ul {
     display: none;
   }
 
@@ -1101,22 +1158,22 @@ table.default thead {
     box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.1);
   }
 
-  .dropotron li > a,
-  .dropotron li > span {
+  .dropotron li>a,
+  .dropotron li>span {
     display: block;
     color: #d7dad8;
     text-decoration: none;
     padding: 0 1.25em;
   }
 
-  .dropotron li:hover > a,
-  .dropotron li:hover > span {
+  .dropotron li:hover>a,
+  .dropotron li:hover>span {
     color: #fff;
     background: #7b8780;
   }
 
-  .dropotron li.active > a,
-  .dropotron li.active > span {
+  .dropotron li.active>a,
+  .dropotron li.active>span {
     color: #fff;
     background: #b1ddab;
   }
@@ -1237,7 +1294,7 @@ table.default thead {
     padding: 3em 0 2em 0;
   }
 
-  #main > .row {
+  #main>.row {
     padding: 2em 0 2em 0;
   }
 
@@ -1373,7 +1430,7 @@ table.default thead {
     margin: 0 0 0.5em 0;
   }
 
-  .box.highlight header > p {
+  .box.highlight header>p {
     margin: 0 0 0.75em 0;
   }
 
@@ -1395,7 +1452,7 @@ table.default thead {
     margin: 0 0 0.5em 0;
   }
 
-  .box.post header > p {
+  .box.post header>p {
     margin: 0 0 0.75em 0;
   }
 
@@ -1413,7 +1470,7 @@ table.default thead {
     margin: 0 0 0.5em 0;
   }
 
-  .box.page-content header > p {
+  .box.page-content header>p {
     margin: 0 0 0.75em 0;
   }
 
@@ -1435,11 +1492,11 @@ table.default thead {
     padding-bottom: 5em;
   }
 
-  .sidebar > section {
+  .sidebar>section {
     margin: 0 0 5em 0 !important;
   }
 
-  .sidebar > section:last-child {
+  .sidebar>section:last-child {
     margin: 0 !important;
   }
 
@@ -1501,7 +1558,7 @@ table.default thead {
     padding: 1em 20px 1em 20px;
   }
 
-  #main > .row {
+  #main>.row {
     padding: 2em 0 2em 0;
   }
 
@@ -1511,7 +1568,7 @@ table.default thead {
     padding: 4em 20px 2em 20px;
   }
 
-  #footer > .row {
+  #footer>.row {
     /* padding: 1em 0 1em 0; */
   }
 
