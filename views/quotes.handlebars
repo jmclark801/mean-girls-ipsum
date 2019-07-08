@@ -1,41 +1,25 @@
 <body>
-
-
+  <div class="link-home">
+    <a href="/">← Back To Home</a>
+  </div>
   <!-- Main -->
   <div id="main-wrapper">
     <div id="main" class="container">
       <div class="row 200%">
-
-
         <!-- Highlight -->
         <section class="box highlight">
-
           <header id="cc">
             <h2>Get In Loser</h2>
             <p>We're Going Shopping</p>
           </header>
-
           <form method="post">
-
             <h3>Number of Paragraphs</h3>
-
             <input type="input" id="para" name="paragraphs" value="3" size="6" class="ipso"><br /><br />
-
-
             <button type="button" id="butt" value="FETCH">FETCH
             </button>
-
-
           </form>
-
         </section>
-
-
       </div>
-
-      {{!-- <div class="copyable">
-                    Keeping this in here to show how copy can work - simply uncomment to test it
-          </div> --}}
       <div id="myModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
@@ -46,24 +30,16 @@
       <!-- Features -->
       <section class="boxFeatures">
         <h2 class="major">Mean Quotes Below</h2>
-
         <div class="row">
           <div id="lorem" class="copyable">
             {{#each ipsum}}
             <p>{{this}}</p>
             {{/each}}
-
           </div>
-
         </div>
-
         <button class="button-copytext" onclick="copyToClipboard('.copyable')">Copy to Clipboard</button>
       </section>
-
-
-
     </div>
   </div>
-  <a href="/" class="link-home">← Back To Home</a>
- 
+  <a href="/">← Back To Home</a>
 </body>
