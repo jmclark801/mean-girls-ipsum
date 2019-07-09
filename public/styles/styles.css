@@ -1788,3 +1788,8 @@ table.default thead {
 .ipso {
   text-align: center;
 }
+
+.float-right {
+  float: right;
+  margin-right: 10px;
+}
