@@ -1780,6 +1780,16 @@ table.default thead {
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.link-home {
+  background: radial-gradient(circle,
+        rgba(248, 133, 255, 1) 0%,
+        rgba(255, 134, 158, 1) 100%);
+}
+
+.link-home > a {
+  color: white;
+}
+
 #lorem {
   font-family: "Ubuntu Mono", monospace;
   font-size: 1.5em;
