@@ -9,7 +9,7 @@ Generates lorem ipsum for development and more while providing entertainment to 
 
 ### Use the App:
 
-This application is hosted on Heroku: [Mean Girls Ipsum](https://meangirlsipsum.net)
+This application is hosted on Heroku: [Mean Girls Ipsum](http://www.meangirlsipsum.net/)
 
 ### What It Does: 
 
